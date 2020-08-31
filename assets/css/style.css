@@ -120,7 +120,8 @@ h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-#header {
+/* on home page, it should appear like this */
+#home #header {
   position: fixed;
   top: 0;
   left: 0;
@@ -146,6 +147,44 @@ h6 {
   }
 }
 
+/* on cv page, it should appear like this */
+/* #cv #header {
+  transition: all 0.5s;
+  background: #fff;
+  z-index: 997;
+  padding: 15px 0;
+  border-bottom: 1px solid #e6f2fb;
+}
+
+#cv #header.header-scrolled {
+  border-color: #fff;
+  box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
+}
+
+#cv #header .logo {
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  font-family: "Poppins", sans-serif;
+}
+
+#cv #header .logo a {
+  color: #006666;
+}
+
+#cv #header .logo img {
+  max-height: 40px;
+}
+
+@media (max-width: 992px) {
+  #header .logo {
+    font-size: 28px;
+  }
+} */
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -156,9 +195,14 @@ h6 {
   list-style: none;
 }
 
+.nav-menu > ul {
+  display: flex;
+}
+
 .nav-menu > ul > li {
   position: relative;
   white-space: nowrap;
+  padding: 14px 0 14px 28px;
 }
 
 .nav-menu a {
@@ -219,6 +263,114 @@ h6 {
 .nav-menu li:hover > a span {
   display: block;
 }
+
+/* #cv .nav-menu .drop-down ul {
+  display: block;
+  position: absolute;
+  left: 15px;
+  top: calc(100% + 30px);
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  padding: 10px 0;
+  background: #fff;
+  box-shadow: 0px 0px 20px rgba(18, 66, 101, 0.1);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+#cv .nav-menu .drop-down:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+#cv .nav-menu .drop-down li {
+  min-width: 180px;
+  position: relative;
+}
+
+#cv .nav-menu .drop-down ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: none;
+  color: #006666;
+}
+
+#cv .nav-menu .drop-down ul a:hover,
+#cv .nav-menu .drop-down ul .active > a,
+#cv .nav-menu .drop-down ul li:hover > a {
+  color: #e17f93;
+}
+
+#cv .nav-menu .drop-down > a:after {
+  content: "\ea99";
+  font-family: IcoFont;
+  padding-left: 5px;
+}
+
+#cv .nav-menu .drop-down .drop-down ul {
+  top: 0;
+  left: calc(100% - 30px);
+}
+
+#cv .nav-menu .drop-down .drop-down:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+}
+
+#cv .nav-menu .drop-down .drop-down > a {
+  padding-right: 35px;
+}
+
+#cv .nav-menu .drop-down .drop-down > a:after {
+  content: "\eaa0";
+  font-family: IcoFont;
+  position: absolute;
+  right: 15px;
+}
+
+@media (max-width: 1366px) {
+  .nav-menu .drop-down .drop-down ul {
+    left: -90%;
+  }
+  .nav-menu .drop-down .drop-down:hover > ul {
+    left: -100%;
+  }
+  .nav-menu .drop-down .drop-down > a:after {
+    content: "\ea9d";
+  }
+}
+
+/* Button */
+#cv .button {
+  margin-left: 25px;
+  background: #e17f93;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 30px 11px 30px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+#cv .button:hover {
+  background: #339999;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .button {
+    margin: 0 48px 0 0;
+    padding: 5px 18px 6px 18px;
+    border-radius: 3px;
+  }
+}
+*/
 
 /* Mobile Navigation */
 .mobile-nav-toggle {
