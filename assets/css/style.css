@@ -121,7 +121,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 /* on home page, it should appear like this */
-#home #header {
+#header {
   position: fixed;
   top: 0;
   left: 0;
