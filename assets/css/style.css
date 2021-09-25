@@ -541,31 +541,36 @@ section {
 }
 
 /*--------------------------------------------------------------
-# About
+# About Collapsible
 --------------------------------------------------------------*/
-.about .content h3 {
-  font-weight: 700;
+
+/* Style the button that is used to open and close the collapsible content */
+.about .collapsible {
+  background-color: #fff;
+  color: #e17f93;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
   font-size: 26px;
-  color: #e17f93;
+  font-weight: 1000;
 }
 
-.about .content ul {
-  list-style: none;
-  padding: 0;
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/* .active,  */
+.about .collapsible:hover {
+  background-color: #fff;
+  color: #339999;
 }
 
-.about .content ul li {
-  padding-bottom: 10px;
-}
-
-.about .content ul i {
-  font-size: 20px;
-  padding-right: 2px;
-  color: #e17f93;
-}
-
-.about .content p:last-child {
-  margin-bottom: 0;
+.about .content {
+  /* margin-bottom: 20; */
+  padding: 18px 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #eee;
 }
 
 /*--------------------------------------------------------------
