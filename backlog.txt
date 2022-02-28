@@ -1,5 +1,0 @@
-<li>
-    Open Source Project: 
-    <a href=https://github.com/DSSGxUK/bmwi>GitHub Code Reporistory</a>, 
-    <a href=https://dssgxuk.github.io/bmwi>Official Project Documentation</a>
-</li>
